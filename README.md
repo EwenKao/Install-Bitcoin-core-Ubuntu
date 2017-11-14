@@ -33,11 +33,17 @@ How to install Bitcoin core @Ubuntu
 > This step is **not necessary**. If you are running ubuntu-desktop, you may wanna use bitcoin-qt. If you are running ubuntu-service, there is no need to install bitcoin-qt.  
 #### Run & check
 
+#### Enter:
+
     bitcoind
 > Running *bitcoind* foreground
 
-    bitcoind -daemon
+#### Or enter:
+
+    bitcoind -daemon
 > Running *bitcoind* background
+
+#### Then enter:
 
     bitcoin-cli getinfo
 > You can check your bitcoind process. It may looks like
@@ -59,7 +65,7 @@ How to install Bitcoin core @Ubuntu
       "relayfee": 0.00001000,
       "errors": ""
     }
-> You can also check ***debug.log***
+> You can also check ***debug.log*** with following command:
 
     cd $HOME/.bitcoin
     tail -f debug.log
