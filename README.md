@@ -64,7 +64,10 @@ How to install Bitcoin core @Ubuntu
       "paytxfee": 0.00000000,
       "relayfee": 0.00001000,
       "errors": ""
-    }
+    }
+> getinfo is deprecated and will be fully removed in 0.16. Projects should transition to using getblockchaininfo, getnetworkinfo, and getwalletinfo before upgrading to 0.16"
+
+
 > You can also check ***debug.log*** with following command:
 
     cd $HOME/.bitcoin
